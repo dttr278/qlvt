@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E85CA72F-D738-4E7F-928C-1917FB281246}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLVTr</RootNamespace>
+    <AssemblyName>QLVTr</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Export, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetDS.cs">
+      <DependentUpon>DataSetDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMaster.cs">
+      <DependentUpon>DataSetMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBmanager.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDH.Designer.cs">
+      <DependentUpon>FormDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKho.Designer.cs">
+      <DependentUpon>FormKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNV.Designer.cs">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPN.Designer.cs">
+      <DependentUpon>FormPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPX.Designer.cs">
+      <DependentUpon>FormPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRPHDNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRPHDNV.Designer.cs">
+      <DependentUpon>FormRPHDNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRPNX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRPNX.Designer.cs">
+      <DependentUpon>FormRPNX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTH.Designer.cs">
+      <DependentUpon>FormTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVT.Designer.cs">
+      <DependentUpon>FormVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSettingForm.Designer.cs">
+      <DependentUpon>LoginSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataTableLog.cs" />
+    <Compile Include="RP_NV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_NV.Designer.cs">
+      <DependentUpon>RP_NV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_DDHChuaNhap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_DDHChuaNhap.Designer.cs">
+      <DependentUpon>RP_DDHChuaNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_DHNV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_DHNV.Designer.cs">
+      <DependentUpon>RP_DHNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_TKPN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_TKPN.Designer.cs">
+      <DependentUpon>RP_TKPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_TKPX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_TKPX.Designer.cs">
+      <DependentUpon>RP_TKPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_TONGHOP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_TONGHOP.Designer.cs">
+      <DependentUpon>RP_TONGHOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_VT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_VT.Designer.cs">
+      <DependentUpon>RP_VT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDH.resx">
+      <DependentUpon>FormDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKho.resx">
+      <DependentUpon>FormKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNV.resx">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPN.resx">
+      <DependentUpon>FormPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPX.resx">
+      <DependentUpon>FormPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRPHDNV.resx">
+      <DependentUpon>FormRPHDNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRPNX.resx">
+      <DependentUpon>FormRPNX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTH.resx">
+      <DependentUpon>FormTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVT.resx">
+      <DependentUpon>FormVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSettingForm.resx">
+      <DependentUpon>LoginSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RP_NV.resx">
+      <DependentUpon>RP_NV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_DDHChuaNhap.resx">
+      <DependentUpon>RP_DDHChuaNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_DHNV.resx">
+      <DependentUpon>RP_DHNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_TKPN.resx">
+      <DependentUpon>RP_TKPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_TKPX.resx">
+      <DependentUpon>RP_TKPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_TONGHOP.resx">
+      <DependentUpon>RP_TONGHOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_VT.resx">
+      <DependentUpon>RP_VT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSetDS.xsc">
+      <DependentUpon>DataSetDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetDS.xss">
+      <DependentUpon>DataSetDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMaster.xsc">
+      <DependentUpon>DataSetMaster.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMaster.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMaster.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetMaster.xss">
+      <DependentUpon>DataSetMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
